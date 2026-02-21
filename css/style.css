@@ -1,0 +1,82 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 25em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+#home {
+  background-color: #b3b5b7;
+}
+
+#home h1,
+#home p {
+  color: #212529;
+}
+
+#short-p {
+  color: #1900fc89 !important;
+  font-weight: bold;
+}
+
+#aboutme {
+  background-color: #e3e6e8;
+}
+
+#skills {
+  background-color: #e3e6e8;
+}
+
+.skill {
+  background-color: #111961b6;
+  border-style: groove;
+}
+
+#skills li {
+  color: #e3e6e8;
+}
+
+.skill-card {
+  background: #ffffff1d;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+#skills h5 {
+  font-size: 1.1rem;
+}
+
+#skills ul li {
+  padding: 4px 0;
+}
