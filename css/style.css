@@ -30,7 +30,7 @@
 }
 
 #home {
-  background-color: #b3b5b7;
+  background-color: #b6b9bc;
 }
 
 #home h1,
@@ -47,8 +47,10 @@
   background-color: #e3e6e8;
 }
 
-#skills {
+#skills,
+#experience {
   background-color: #e3e6e8;
+  padding-bottom: 30px;
 }
 
 .skill {
@@ -79,4 +81,52 @@
 
 #skills ul li {
   padding: 4px 0;
+}
+
+.timeline-dot {
+  left: 20px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #111961b6;
+  border: 2px solid #111961b6;
+  box-shadow: 0 0 6px #313a83b6;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.timeline-content {
+  border: 2px solid #dadfe2;
+  box-shadow: 0 0 6px #313a83b6;
+}
+
+.timeline-item {
+  max-width: 900px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.8);
+}
+
+.timeline:hover {
+  background-color: #e7e5f8;
+  transition: background-color 1.2s ease;
+}
+
+.timeline {
+  transition: background-color 0.5s ease;
+}
+
+.timeline-dot::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  bottom: 0;
+  left: 2px;
+  width: 2px;
+  height: 7vh;
+  background: #111961b6;
+  border-radius: 2px;
 }
