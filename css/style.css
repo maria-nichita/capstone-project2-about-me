@@ -30,7 +30,13 @@
 }
 
 #home {
-  background-color: #b6b9bc;
+  /*background-color: #b6b9bc;*/
+  background: linear-gradient(
+    90deg,
+    rgba(206, 206, 235, 1) 0%,
+    rgba(240, 204, 240, 1) 50%,
+    rgba(245, 220, 220, 1) 100%
+  );
 }
 
 #home h1,
@@ -43,13 +49,20 @@
   font-weight: bold;
 }
 
-#aboutme {
-  background-color: #e3e6e8;
-}
-
+#aboutme,
 #skills,
-#experience {
-  background-color: #e3e6e8;
+#experience,
+#projects,
+#hobbies,
+#contact {
+  /*background-color: #e3e6e8;*/
+
+  background: linear-gradient(
+    90deg,
+    rgba(159, 161, 207, 1) 0%,
+    rgba(196, 157, 196, 1) 50%,
+    rgba(232, 213, 213, 1) 100%
+  );
   padding-bottom: 30px;
 }
 
@@ -130,4 +143,73 @@
   height: 7vh;
   background: #111961b6;
   border-radius: 2px;
+}
+
+.project {
+  background-color: #11196147;
+  border-style: groove;
+  max-width: 700px;
+}
+
+.more-info {
+  text-align: right;
+  font-style: italic;
+  color: rgba(27, 14, 214, 0.877);
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.hobby-card {
+  padding: 20px;
+  text-align: center;
+  background: #cdcfe4;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.431);
+  transition: transform 0.2s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-4px);
+}
+
+/*.empty {
+  /* doar un placeholder gol */
+
+/*}
+*/
+
+@media (max-width: 600px) {
+  .hobbies-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 200px;
+    margin: 40px auto;
+  }
+}
+
+.message {
+  padding: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(206, 206, 235, 1) 0%,
+    rgba(240, 204, 240, 1) 50%,
+    rgba(245, 220, 220, 1) 100%
+  );
+  border-radius: 12px;
+  font-style: italic;
+  text-align: left;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(253, 0, 249, 0.484);
+  color: #4e306f;
+  max-width: fit-content;
 }
