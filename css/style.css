@@ -84,7 +84,8 @@
 }
 
 .timeline-dot {
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 10px;
   width: 10px;
   border-radius: 50%;
